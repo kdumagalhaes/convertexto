@@ -5,4 +5,7 @@
   max-width: 64rem;
   margin: 2rem auto;
   padding: $safe-area-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

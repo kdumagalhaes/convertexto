@@ -5,7 +5,7 @@ type ContainerRootProps = PropsWithChildren
 const ContainerRoot = ({ children }: ContainerRootProps) => {
   return (
     <div className={styles.container}>
-      <main>{children}</main>
+      {children}
     </div>
   );
 };
