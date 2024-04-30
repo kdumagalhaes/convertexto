@@ -2,4 +2,4 @@
 npm run lint
 
 # runs unit tests
-# npm run test:no-watch
+npm run test:no-watch
