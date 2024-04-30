@@ -1,0 +1,5 @@
+# runs lint
+npm run lint
+
+# runs unit tests
+npm run test:no-watch
