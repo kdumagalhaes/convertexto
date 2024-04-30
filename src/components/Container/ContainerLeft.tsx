@@ -1,14 +1,17 @@
-import { PropsWithChildren } from "react";
+import "@blocknote/core/fonts/inter.css";
+import { BlockNoteView, useCreateBlockNote } from "@blocknote/react";
+import "@blocknote/react/style.css";
 import styles from "./ContainerLeft.module.scss";
 
-type ContainerLeftProps = PropsWithChildren
+const ContainerLeft = () => {
+  const editor = useCreateBlockNote();
 
-const ContainerLeft = ({ children }: ContainerLeftProps) => {
   return (
-    <>
-    <span className={styles.title}>Cole ou digite seu texto aqui</span>
-    <div>{children}</div>
-    </>
+    <div className={styles.container}>
+    <span className={styles.title}><strong>Cole</strong> ou 
+    <strong> digite</strong> seu texto abaixo</span>
+    <div className={styles.editor}><BlockNoteView editor={editor} /></div>
+    </div>
   );
 };
 
