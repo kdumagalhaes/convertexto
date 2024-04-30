@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-03;
+  border-radius: 6px;
+  color: $color-03;
+  transition: all 0.3s;
+  background: transparent;
+  font-weight: $font-bold;
+  font-size: 1rem;
+
+  &:hover {
+    color: $color-04;
+    border: 1px solid $color-04;
+  }
+}
