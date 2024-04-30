@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.container {
+  width: 100%;
+  max-width: 64rem;
+  margin: 2rem auto;
+  padding: $safe-area-padding;
+}
+
+.title {
+  font-weight: $font-bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  max-width: 35rem;
+
+  strong {
+    font-weight: $font-bold;
+    color: $color-03;
+  }
+}
